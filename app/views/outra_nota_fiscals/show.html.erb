@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @outra_nota_fiscal.cliente %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @outra_nota_fiscal.endereco %>
+</p>
+
+<%= link_to 'Edit', edit_outra_nota_fiscal_path(@outra_nota_fiscal) %> |
+<%= link_to 'Back', outra_nota_fiscals_path %>

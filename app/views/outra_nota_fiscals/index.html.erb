@@ -1,0 +1,27 @@
+<h1>Listing outra_nota_fiscals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>Endereco</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @outra_nota_fiscals.each do |outra_nota_fiscal| %>
+      <tr>
+        <td><%= outra_nota_fiscal.cliente %></td>
+        <td><%= outra_nota_fiscal.endereco %></td>
+        <td><%= link_to 'Show', outra_nota_fiscal %></td>
+        <td><%= link_to 'Edit', edit_outra_nota_fiscal_path(outra_nota_fiscal) %></td>
+        <td><%= link_to 'Destroy', outra_nota_fiscal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Outra nota fiscal', new_outra_nota_fiscal_path %>
